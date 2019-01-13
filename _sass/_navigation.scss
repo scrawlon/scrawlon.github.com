@@ -56,6 +56,16 @@ nav {
         position: absolute;
         top: 0;
         z-index: 10;
+
+        .home-url {
+          background: #fff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px;
+          border-radius: 0 0 70px;
+          width: 66%;
+        }
       }
     }
 
@@ -201,6 +211,13 @@ nav {
 
       ul {
         padding: 17px 10px 5px;
+
+        &.main-nav {
+          .home-url {
+            padding: 20px;
+            width: 36%;
+          }
+        }
       }
 
       .float-right {

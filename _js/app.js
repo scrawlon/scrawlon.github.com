@@ -1,4 +1,4 @@
-var Velocity = require('velocity-animate');
+// var Velocity = require('velocity-animate');
 var urlPath = window.location.pathname;
 
 require('./header');
@@ -11,5 +11,5 @@ if ( urlPath.indexOf('/portfolio') !== -1 ) {
 }
 
 window.onload = function() {
-  require('./velocity-animation');
+  // require('./velocity-animation');
 }

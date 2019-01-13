@@ -3,7 +3,10 @@
 .scrawlon-logo-full {
   width: 250px;
   height: 250px;
-  opacity: 0;
+  position: absolute;
+  top: 66%;
+  left: 5%;
+  // opacity: 0;
   // background: linear-gradient(to bottom, transparent, rgba(25,25,112,0.6));
 
   @media screen and (min-width: 650px) {
@@ -11,21 +14,21 @@
     height: 300px;
   }
 
-  .logo-frame {
-    stroke-dasharray: 741px;
-    stroke-dashoffset: 986px;
-  }
-
-  .logo-so {
-    stroke: #fff;
-    stroke-width: 1px;
-    stroke-opacity: 0;
-    fill-opacity: 0;
-  }
-
-  .logo-scrawlon {
-    fill-opacity: 0;
-  }
+  // .logo-frame {
+  //   stroke-dasharray: 741px;
+  //   stroke-dashoffset: 986px;
+  // }
+  //
+  // .logo-so {
+  //   stroke: #fff;
+  //   stroke-width: 1px;
+  //   stroke-opacity: 0;
+  //   fill-opacity: 0;
+  // }
+  //
+  // .logo-scrawlon {
+  //   fill-opacity: 0;
+  // }
 }
 
 span.svg {

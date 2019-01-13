@@ -1,6 +1,6 @@
 var homeLogoAnimation = require('./velocity-animations/home-logo-animation.js');
-var scrollAnimation = require('./velocity-animations/scroll-animation.js');
-var scrollToElement = require('./velocity-animations/scroll-to-element.js');
+// var scrollAnimation = require('./velocity-animations/scroll-animation.js');
+// var scrollToElement = require('./velocity-animations/scroll-to-element.js');
 
 (function() {
   var svgScrawlonLogoFull = document.getElementsByClassName('scrawlon-logo-full');
