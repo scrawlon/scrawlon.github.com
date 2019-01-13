@@ -1,17 +1,5 @@
 ---
 order: 1
-background-image:
-  file: blue-blast.jpg
-  caption:
-    credit:
-      name: Eric Sonstroem
-      url: https://www.flickr.com/photos/sonstroem/
-    license:
-      type: Creative Commons
-      url: https://creativecommons.org/licenses/by/2.0/
-    source: Flickr
-    title: Blue blast
-    url: https://flic.kr/p/Kgfvw5
 ---
 <section id="main-logo">
   <div class="wide-wrapper">
@@ -30,7 +18,6 @@ background-image:
     </div>
 
     <div class="slide-content">
-      {% include scroll_arrow.html %}
     </div>
 
   </div>  

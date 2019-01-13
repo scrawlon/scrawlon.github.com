@@ -5,12 +5,15 @@
 @import "hamburgers-settings";
 @import "./hamburgers/hamburgers";
 @import "header";
+@import "navigation";
+// @import "social-icons";
 @import "swiper.min";
 @import "swiper";
 @import "svg";
 @import "home";
 @import "about";
 @import "portfolio";
+@import "blog";
 @import "./font-awesome/font-awesome";
 
 .icon-user {
@@ -194,6 +197,7 @@ figcaption {
   right: 2px;
   line-height: 1.45rem;
   color: #fff;
+  margin: 10px;
 
   a {
     color: #fff;
@@ -222,6 +226,7 @@ article {
   p {
     color: #666;
     width: 100%;
+    font-size: .95em;
   }
 }
 
