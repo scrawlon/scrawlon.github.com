@@ -1,0 +1,38 @@
+<nav id='main-navigation'>
+  <ul>
+
+    <!-- Logo Home Link -->
+    {% for home in site.home %}
+	    <li id="logo">
+        {%
+          include nav-link.html
+          page_url = page.url
+          nav_url = home.url
+          nav_title = "Scrawlon: Blog/Portfolio"
+        %}
+      </li>
+    {% endfor %}
+
+    <!-- Desktop Nav -->
+    {% for link in site.links %}
+	    <li>
+        {%
+          include nav-link.html
+          page_url = page.url
+          nav_url = link.url
+          nav_title = link.title
+        %}
+      </li>
+    {% endfor %}
+
+  </ul>
+</nav>
+
+<!-- Mobile Nav Toggle -->
+<div class="hamburger hamburger--slider nav-mobile-toggle" id="nav-mobile-toggle">
+  <div class="hamburger-box">
+    <div class="hamburger-inner"></div>
+  </div>
+</div>
+
+<div class="nav-mobile-backdrop" id="nav-mobile-backdrop"></div>

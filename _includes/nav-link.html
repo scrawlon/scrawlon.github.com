@@ -1,0 +1,7 @@
+{% if include.page_url != include.nav_url %}
+  <a class="{{ nav_class }}" href="{{ site.url }}{{ include.nav_url }}">
+    {{ include.nav_title }}
+  </a>
+{% else %}
+  {{ include.nav_title }}
+{% endif %}

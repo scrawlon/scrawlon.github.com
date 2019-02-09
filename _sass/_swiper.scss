@@ -52,7 +52,7 @@
   background: #000;
   padding-bottom: 30px;
   text-align: center;
-  height: 94vh;
+  height: 38vh;
   min-height: 450px;
   max-height: 700px;
   position: relative;
@@ -71,9 +71,9 @@
 }
 
 .slider-background {
-  height: 94vh;
-  min-height: 450px;
-  max-height: 450px;
+  height: 38vh;
+  min-height: 300px;
+  max-height: 700px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -81,6 +81,10 @@
   background-size: cover;
   @include scanlines(#000, 1px, 0deg, 0.3);
   z-index: 1;
+
+  @media only screen and #{$tablet} {
+    height: 68vh;
+  }
 
   @media only screen and #{$tablet} and (orientation: portrait) {
     -webkit-animation: imagebulger 4.2s ease-out forwards;

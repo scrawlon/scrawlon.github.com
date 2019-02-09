@@ -2,6 +2,7 @@
   position: absolute;
   z-index: 9;
   width: 100vw;
+  background: rgba(0,0,0,.5);
 
   // @media only screen and #{$landscape} {
   //   position: fixed;
@@ -22,11 +23,8 @@ header {
   margin-top: 0;
 
   @media only screen and #{$tablet} {
-    height: 40vh;
+    height: 68vh;
     min-height: 350px;
-  }
-  @media only screen and #{$landscape} {
-    height: 50vh;
   }
 
 
@@ -35,10 +33,10 @@ header {
   }
 
   &.full-height {
-    height: 68vh;
+    height: 44vh;
 
     @media only screen and #{$tablet} {
-      height: 44vh;
+      height: 68vh;
     }
   }
 
