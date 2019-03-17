@@ -1,21 +1,21 @@
 {% if include.image.caption %}
   <figcaption class="figcaption figcaption__slider--background small">
-    {% if include.image.caption.url %}
-      <a href="{{ include.image.caption.url }}" title="{{ include.image.caption.title}}" target="_blank" rel="noopener noreferrer">
-        "{{ include.image.caption.title }}"
+    {% if include.image.caption.source.url %}
+      <a href="{{ include.image.caption.source.url }}" title="{{ include.image.title}}" target="_blank" rel="noopener noreferrer">
+        "{{ include.image.title }}"
       </a>
     {% else %}
-      "{{ include.image.caption.title }}"
+      "{{ include.image.title }}"
     {% endif %}
-    {% if include.image.caption.credit.url %}
-      <a href="{{ include.image.caption.credit.url }}" title="{{ include.image.caption.credit.name }}" target="_blank" rel="noopener noreferrer">
-        by {{ include.image.caption.credit.name }}
+    {% if include.image.caption.owner.url %}
+      <a href="{{ include.image.caption.owner.url }}" title="{{ include.image.caption.owner.name }}" target="_blank" rel="noopener noreferrer">
+        by {{ include.image.caption.owner.name }}
       </a>
     {% else %}
-      by {{ include.image.caption.credit.name }}
+      by {{ include.image.caption.owner.name }}
     {% endif %}
-    {% if include.image.caption.source %}
-      on {{ include.image.caption.source }}
+    {% if include.image.caption.source.site %}
+      on {{ include.image.caption.source.site }}
     {% endif %}
     {% if include.image.caption.license.type %}
       <a href="{{ include.image.caption.license.url }}" title="{{ include.image.caption.license.type}}" target="_blank" rel="noopener noreferrer">

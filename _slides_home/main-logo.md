@@ -1,17 +1,6 @@
 ---
 order: 1
-background-image:
-  file: red-light-bulb.jpg
-  caption:
-    credit:
-      name: Eric Sonstroem
-      url: https://www.flickr.com/photos/sonstroem/
-    license:
-      type: Creative Commons
-      url: https://creativecommons.org/licenses/by/2.0/
-    source: Flickr
-    title: Blue blast
-    url: https://flic.kr/p/Kgfvw5
+background-image: red-light-bulb
 ---
 
 <div class='container'>

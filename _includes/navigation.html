@@ -5,13 +5,13 @@
       <a class="navbar-brand" href="{{ site.url }}{{ home.url }}">ScrawlOn</a>
     {% endfor %}
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav nav__navbar">
         {% for link in site.links reversed %}
     	    <li class="nav-item">
             {% if page.url == link.url %}
               <span class="current-page-link">{{ link.title }}</span>
             {% else %}
-              <a href="{{ site.url }}{{ link.url }}" class="nav-link {{ nav_class }}" title="{{ link.title }}">
+              <a href="{{ site.url }}{{ link.url }}" class="link link__navbar {{ nav_class }}" title="{{ link.title }}">
                 {{ link.title }}
               </a>
             {% endif %}

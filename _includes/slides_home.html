@@ -5,10 +5,11 @@
     {% for slide in slides_by_order %}
       <div class="swiper-slide slider__slide">
         {% if slide.background-image %}
-          <figure class="figure figure__slider--background" role="presentation">
-            <img class="img img__slider--background" src="{{ site.url }}/images/{{ slide.background-image.file }}" />
+          {% assign background-image = site.data.images[slide.background-image] %}
+          <figure class="figure figure__slider--background">
+            <img class="img img__slider--background" src="{{ site.url }}/{{ background-image.file }}" alt="{{ background-image.description }}" />
 
-            {% include image_caption.html image=slide.background-image %}
+            {% include image_caption.html image=background-image %}
           </figure>
         {% endif %}
 
