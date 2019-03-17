@@ -19,7 +19,7 @@ gulp.task('browserify', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['./_js/*.js', './_js/velocity-animations/*.js', 'portfolio-projects.json'], ['browserify']);
+  gulp.watch(['./_js/**/*.js', 'portfolio-projects.json'], ['browserify']);
 });
 
 gulp.task('fontawesome-fonts', function() {
@@ -32,7 +32,7 @@ gulp.task('fontawesome-sass', function() {
     .pipe(gulp.dest('_sass/font-awesome'));
 });
 
-gulp.task('inline-css', function() {
-  return gulp.src('css/inline.scss')
-    .pipe(gulp.dest('_includes/css'));
-});
+// gulp.task('inline-css', function() {
+//   return gulp.src('css/inline.scss')
+//     .pipe(gulp.dest('_includes/css'));
+// });

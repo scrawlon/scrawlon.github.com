@@ -1,15 +1,21 @@
+var sliders = require('./sliders');
+
 // var Velocity = require('velocity-animate');
-var urlPath = window.location.pathname;
-
-require('./header');
-require('./mobileMenu');
-require('./homeSlider');
-require('fg-loadcss');
-
-if ( urlPath.indexOf('/portfolio') !== -1 ) {
-  require('./portfolio');
-}
+// require('./header');
+// require('./mobileMenu');
+// require('fg-loadcss');
+// require('./velocity-animation');
+// require('./homeSlider');
 
 window.onload = function() {
-  // require('./velocity-animation');
+  var urlPath = window.location.pathname;
+
+  if ( urlPath === '/' ) {
+    console.log('on home page. load home slider.');
+    sliders.home();
+  }
+
+  if ( urlPath.indexOf('/portfolio') !== -1 ) {
+    require('./portfolio');
+  }
 }

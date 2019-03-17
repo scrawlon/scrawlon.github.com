@@ -1,10 +1,11 @@
 {% include head.html %}
-{% include slides_home.html %}
 
-<section>
-  <div class="fullwidth-wrapper">
-    {{ content }}
-  </div>
-</section>
+<main role='main'>
+  <section>
+    {% include slides_home.html %}
+  </section>
+
+  {{ content }}
+</main>
 
 {% include footer.html %}

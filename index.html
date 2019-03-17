@@ -5,32 +5,33 @@ web developer, Scott McGrath"
 tags: [code ruby javascipt programming]
 ---
 
-<article>
+<section class="container">
+  <p>
+    Scrawlon.com is the Internet hub for thoughts, works and writings of
+    Baltimore-area web developer, Scott McGrath.
+    Checkout the <a href="/blog">Blog</a> and <a href="/portfolio">Portfolio</a>.
+  </p>
+</section>
 
-  <div class="home-intro">
-    <p>
-      Scrawlon.com is the Internet hub for thoughts, works and writings of
-      Baltimore-area web developer, Scott McGrath.
-      Checkout the <a href="/blog">Blog</a> and <a href="/portfolio">Portfolio</a>.
-    </p>
-  </div>
-
-  <h2 class="block-header">Featured Projects</h2>
-  <div class="block-wrapper">
+<section class="container">
+  <h2>Featured Projects</h2>
+  <div class="row">
     {% assign projects_featured = site.portfolio_projects | where: 'featured', 'true' %}
     {% for project in projects_featured limit:3 %}
-      <div class="block-portfolio">
+      <div class="col-lg-6 col-md-12">
         <a href="{{ project.url | replace: '/portfolio_projects/', '/portfolio/' }}">
           <img src="{{ site.url }}/images/thumbnails/{{ project.screenshot }}" alt="{{ project.title }}">
         </a>
       </div>
     {% endfor %}
-    <div class="block-link">
+    <div class="col-lg-6 col-md-12">
       <a href="/portfolio"><h2>View More Projects</h2></a>
     </div>
   </div>
+</section>
 
-  <h2 class="block-header">Latest Posts</h2>
+<section class="container">
+  <h2>Latest Posts</h2>
   <div class="block-wrapper project-preview-header">
     {% for post in site.posts limit:3 %}
       <div class="block"
@@ -43,10 +44,9 @@ tags: [code ruby javascipt programming]
 
       </div>
     {% endfor %}
-    <div class="block">
+    <div>
       <div class="backdrop"></div>
       <a href="/blog"><h2><span class="text-highlight">Read more posts...</span></h2></a>
     </div>
   </div>
-
-</article>
+</section>

@@ -1,12 +1,10 @@
 ---
 ---
 
+@import "swiper.min.scss";
 
-// Lazy Load
-@import "variables";
-@import "functions";
-@import "footer";
-@import "codepen";
-@import "code";
+@import "components/common";
 
-@import "new_home";
+img {
+  max-width: 100%;
+}

@@ -1,28 +1,27 @@
-<!-- Slider main container -->
-<div class="swiper-container" id="home-swiper">
-  <!-- Additional required wrapper -->
+<!-- Slider  -->
+<div class="swiper-container slider">
   <div class="swiper-wrapper">
-    <!-- Slides -->
     {% assign slides_by_order = site.slides_home | sort: 'order' %}
     {% for slide in slides_by_order %}
-      <figure class="slider-background"
+      <div class="swiper-slide slider__slide">
         {% if slide.background-image %}
-          style="background-image:
-            linear-gradient(to bottom, rgba(25, 57, 102, 0.1), rgba(25, 57, 102, 0.5)),
-            url({{ site.url }}/images/{{ slide.background-image.file }});"
-        {% else if slide.background-color %}
-          style="background:{{slide.background-color}}"
-        {% endif %}>
-        <div class="swiper-color-frame"></div>
-        <div class="swiper-fade"></div>
+          <figure class="figure figure__slider--background" role="presentation">
+            <img class="img img__slider--background" src="{{ site.url }}/images/{{ slide.background-image.file }}" />
+
+            <figcaption class="figcaption figcaption__slider--background small">
+              {% include image_caption.html image=slide.background-image %}
+            </figcaption>
+          </figure>
+        {% endif %}
+
         {{slide.content}}
-        {% include image_caption.html image=slide.background-image %}
-      </figure>
+      </div>
     {% endfor %}
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
+  {% if site.slides_home.length > 1 %}
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  {% endif %}
 </div>
