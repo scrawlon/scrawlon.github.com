@@ -8,9 +8,7 @@
           <figure class="figure figure__slider--background" role="presentation">
             <img class="img img__slider--background" src="{{ site.url }}/images/{{ slide.background-image.file }}" />
 
-            <figcaption class="figcaption figcaption__slider--background small">
-              {% include image_caption.html image=slide.background-image %}
-            </figcaption>
+            {% include image_caption.html image=slide.background-image %}
           </figure>
         {% endif %}
 

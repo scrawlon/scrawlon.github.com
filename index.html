@@ -6,7 +6,7 @@ tags: [code ruby javascipt programming]
 ---
 
 <section class="container">
-  <p>
+  <p class="pt-5">
     Scrawlon.com is the Internet hub for thoughts, works and writings of
     Baltimore-area web developer, Scott McGrath.
     Checkout the <a href="/blog">Blog</a> and <a href="/portfolio">Portfolio</a>.
@@ -14,7 +14,7 @@ tags: [code ruby javascipt programming]
 </section>
 
 <section class="container">
-  <h2>Featured Projects</h2>
+  <h1>Featured Projects</h1>
   <div class="row">
     {% assign projects_featured = site.portfolio_projects | where: 'featured', 'true' %}
     {% for project in projects_featured limit:3 %}
@@ -31,7 +31,7 @@ tags: [code ruby javascipt programming]
 </section>
 
 <section class="container">
-  <h2>Latest Posts</h2>
+  <h1>Latest Posts</h1>
   <div class="block-wrapper project-preview-header">
     {% for post in site.posts limit:3 %}
       <div class="block"

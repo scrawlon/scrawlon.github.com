@@ -1,7 +1,7 @@
 ---
 order: 1
 background-image:
-  file: blue-blast.jpg
+  file: red-light-bulb.jpg
   caption:
     credit:
       name: Eric Sonstroem

@@ -10,6 +10,32 @@
       left: 0;
       right: 0;
       bottom: 0;
+
+      &:before {
+        background-color: #f00e2e;
+        bottom: 0;
+        content: '';
+        mix-blend-mode: darken;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        opacity: .55;
+      }
+
+      &:after {
+        background: linear-gradient(to top left, #75d775, #321a5b);
+        bottom: 0;
+        content: '';
+        mix-blend-mode: hard-light;
+        left: 0;
+        right: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        opacity: .45;
+      }
     }
   }
 }

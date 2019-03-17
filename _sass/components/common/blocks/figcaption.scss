@@ -1,12 +1,22 @@
 
 .figcaption {
+  z-index: 2;
 
   &__slider {
 
     &--background {
       position: absolute;
-      bottom: 0;
-      right: 0;
+      bottom: 3px;
+      right: 10px;
+      color: #fff;
+
+      a {
+        color: #fff;
+
+        &:hover, &:visited {
+          color: #fff;
+        }
+      }
     }
   }
 }
