@@ -10,10 +10,7 @@ var sliders = require('./sliders');
 window.onload = function() {
   var urlPath = window.location.pathname;
 
-  if ( urlPath === '/' ) {
-    console.log('on home page. load home slider.');
-    sliders.home;
-  }
+  sliders.home();
 
   if ( urlPath.indexOf('/portfolio') !== -1 ) {
     require('./portfolio');
