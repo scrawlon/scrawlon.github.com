@@ -1,12 +1,12 @@
 <nav class="nav navbar navbar-expand-sm navbar-light nav">
-  <div class="container">
+  <div class="container container__nav">
     <!-- Logo Home Link -->
     {% for home in site.home %}
       <a class="navbar-brand" href="{{ site.url }}{{ home.url }}">ScrawlOn</a>
     {% endfor %}
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav nav__navbar">
-        {% for link in site.links reversed %}
+        {% for link in site.links %}
     	    <li class="nav-item">
             {% if page.url == link.url %}
               <span class="current-page-link">{{ link.title }}</span>

@@ -1,5 +1,5 @@
 <!-- Slider  -->
-<div class="swiper-container slider">
+<div id="home-swiper" class="swiper-container slider">
   <div class="swiper-wrapper">
     {% assign slides_by_order = site.slides_home | sort: 'order' %}
     {% for slide in slides_by_order %}
@@ -18,7 +18,7 @@
     {% endfor %}
   </div>
 
-  {% if site.slides_home.length > 1 %}
+  {% if site.slides_home.size > 1 %}
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-pagination"></div>

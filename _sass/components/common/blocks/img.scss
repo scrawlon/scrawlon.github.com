@@ -7,7 +7,9 @@
       height: 100%;
       width: 100%;
       object-fit: cover;
-      opacity: .35;
+      // opacity: .1;
+      filter: grayscale(75%);
+      mix-blend-mode: screen;
     }
   }
 }

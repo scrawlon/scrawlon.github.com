@@ -12,7 +12,7 @@ window.onload = function() {
 
   if ( urlPath === '/' ) {
     console.log('on home page. load home slider.');
-    sliders.home();
+    sliders.home;
   }
 
   if ( urlPath.indexOf('/portfolio') !== -1 ) {
