@@ -12,10 +12,10 @@
       bottom: 0;
 
       &:before {
-        background-color: #dc402b;
+        background-color: #000;
         bottom: 0;
         content: '';
-        mix-blend-mode: overlay;
+        mix-blend-mode: lighten;
         left: 0;
         right: 0;
         position: absolute;
@@ -25,10 +25,10 @@
       }
 
       &:after {
-        background: #dc402b;
+        background: #000;
         bottom: 0;
         content: '';
-        mix-blend-mode: saturation;
+        mix-blend-mode: screen;
         left: 0;
         right: 0;
         position: absolute;
