@@ -11,8 +11,8 @@
       <a href="{{ include.image.caption.owner.url }}" title="{{ include.image.caption.owner.name }}" target="_blank" rel="noopener noreferrer">
         by {{ include.image.caption.owner.name }}
       </a>
-    {% else %}
-      by {{ include.image.caption.owner.name }}
+    {% else if include.image.caption.source %}
+      from {{ include.image.caption.source.site }}
     {% endif %}
     {% if include.image.caption.license.type %}
       <a href="{{ include.image.caption.license.url }}" title="{{ include.image.caption.license.type}}" target="_blank" rel="noopener noreferrer">
