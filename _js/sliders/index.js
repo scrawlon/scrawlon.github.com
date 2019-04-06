@@ -1,5 +1,5 @@
 
-var Swiper = require('./swiper/dist/js/swiper.min.js');
+var Swiper = require('swiper');
 
 function home() {
   var homeSwiper = document.querySelector('#home-swiper');
@@ -14,7 +14,7 @@ function home() {
     centeredSlides: true,
     paginationClickable: true,
     loop: true,
-    parallax: true,
+    parallax: true
   });
 }
 
