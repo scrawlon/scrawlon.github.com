@@ -1,22 +1,21 @@
 ---
 order: 2
 background-image: do-code
-image: swiper-js-fullscreen
 ---
+
+{% assign featured_post = site.posts | first %}
 
 <div class='container'>
   <div class="row">
-    <div class="col-lg-12">
-      <div class="slider__slide-content">
-        <h1 class="slider__slide-title align-middle">Featured Blog Post</h1>
-      </div>
-    </div>
-    <div class="col-md-2 col-sm-1"></div>
-    <div class="col-md-8 col-sm-10 my-auto">
-      {% if page.image %}
-        {% assign slide_image = site.data.images[page.image] %}
-        <img class="slider__slide-illustration" src="{{ slide_image.file }}" alt="{{ slide_image.description }}">
-      {% endif %}
+    <div class="col-lg-2 col-md-1"></div>
+    <div class="col-lg-8 col-md-10 my-auto">
+      <a href="{{ site.url }}{{ featured_post.url }}">
+        {% if featured_post.header_image %}
+          {% assign slide_image = site.data.images[featured_post.header_image] %}
+          <img class="slider__slide-illustration" src="{{ slide_image.file }}" alt="{{ slide_image.description }}">
+        {% endif %}
+        <h1 class="slider__slide-illustration-title">{{ featured_post.title }}</h1>
+      </a>
     </div>
   </div>
 </div>

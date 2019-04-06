@@ -3,15 +3,7 @@ layout: post
 title: "Swiper JS Fullscreen Image Slider (Improved!)"
 description: "A better method to create fullscreen image sliders with SwiperJS"
 author: Scott McGrath
-header_image:
-  file: swiper-js-fullscreen.jpg
-  caption:
-    credit:
-      name: Jakob Owens
-      url: https://unsplash.com/@jakobowens1
-    source: Unsplash
-    title: Metropolitan City of Venice, Italy
-    url: https://unsplash.com/photos/e8rfcKAx1Rk
+header_image: swiper-js-fullscreen
 date: "2018-12-18 12:08:27 -0500"
 ---
 

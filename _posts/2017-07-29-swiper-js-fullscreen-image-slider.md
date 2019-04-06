@@ -3,18 +3,7 @@ ID: 1724
 title: Swiper JS Fullscreen Image Slider
 description: "How to create a fullscreen image slider with SwiperJS (JavaScript)"
 author: Scott McGrath
-header_image:
-  file: swiper-js-polaroids.jpg
-  caption:
-    credit:
-      name: Virginia rm
-      url: https://www.flickr.com/photos/virgirm/
-    license:
-      type: Creative Commons
-      url: https://creativecommons.org/licenses/by/2.0/
-    source: Flickr
-    title: Polaroid photos
-    url: https://www.flickr.com/photos/virgirm/3787704589/in/faves-151359080@N04/
+header_image: swiper-js-polaroids
 layout: post
 post_excerpt: >
   Create an image slider with a fullscreen

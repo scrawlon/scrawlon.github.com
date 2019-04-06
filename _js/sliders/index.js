@@ -1,11 +1,11 @@
 
-var Swiper = require('swiper');
+var Swiper = require('./swiper/dist/js/swiper.min.js');
 
 function home() {
   var homeSwiper = document.querySelector('#home-swiper');
 
   if ( !homeSwiper ) return false;
-  
+
   new Swiper('#home-swiper', {
     pagination: '.swiper-pagination',
     nextButton: '.swiper-button-next',
@@ -14,7 +14,7 @@ function home() {
     centeredSlides: true,
     paginationClickable: true,
     loop: true,
-    parallax: true
+    parallax: true,
   });
 }
 

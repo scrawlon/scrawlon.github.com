@@ -24,10 +24,7 @@
     "vinyl-source-stream": "^1.1.2"
   },
   "dependencies": {
-    "fg-loadcss": "^2.1.0",
     "font-awesome": "^4.7.0",
-    "swiper": "^3.4.2",
-    "velocity-animate": "^1.5.2",
-    "web-animations-js": "^2.3.1"
+    "swiper": "^4.5.0"
   }
 }
