@@ -15,11 +15,10 @@ function home() {
     paginationClickable: true,
     loop: true,
     parallax: true,
-    preventClick: false,
-    preventClickPropagation: false
+    autoplay: 6000,
+    speed: 2000
   });
 }
-
 
 module.exports = {
   home: home
