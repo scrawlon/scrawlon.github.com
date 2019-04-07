@@ -2,13 +2,34 @@
 .link {
 
   &__navbar {
-    color: #fff;
-    margin: 0 40px 0 0;
-    font-size: 16px;
+    color: #000;
+    margin: 0 0 0 0;
+    font-size: 18px;
+    line-height: 2.2em;
 
     &:hover, &:visited {
-      color: #fff;
+      color: #000;
       text-decoration: none;
+    }
+
+    &--logo {
+      color: #fff;
+      margin: 0 60px 0 0;
+
+      &:hover, &:visited {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    @media (min-width: 575.98px) {
+      color: #fff;
+      margin: 0 60px 0 0;
+      font-size: 16px;
+
+      &:hover, &:visited {
+        color: #fff;
+      }
     }
   }
 }
