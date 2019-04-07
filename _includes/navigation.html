@@ -9,12 +9,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav nav__navbar mr-auto">
+        {% for home in site.home %}
+    	    <li class="nav-item nav-item--home">
+            {% if page.url == home.url %}
+              <span class="link link__navbar">Home</span>
+            {% else %}
+              <a class="link link__navbar" href="{{ site.url }}{{ home.url }}">Home</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+
         {% for link in site.links %}
     	    <li class="nav-item">
             {% if page.url == link.url %}
-              <span class="current-page-link">{{ link.title }}</span>
+              <span class="link link__navbar">{{ link.title }}</span>
             {% else %}
-              <a class="link link__navbar" href="{{ site.url }}{{ link.url }}" class="link link__navbar {{ nav_class }}" title="{{ link.title }}">
+              <a class="link link__navbar" href="{{ site.url }}{{ link.url }}" class="link link__navbar {{ nav_class }}">
                 {{ link.title }}
               </a>
             {% endif %}

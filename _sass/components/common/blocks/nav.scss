@@ -1,4 +1,3 @@
-
 .nav {
   z-index: 2;
   background: rgba(0,0,0,0);
@@ -7,17 +6,24 @@
   left: 0;
   right: 0;
 
-   &__navbar {
-     border-radius: 5px;
-     background: #DAE0E5;
-     padding: 10px 40px 10px 17px;
-     position: absolute;
-     right: 0;
+  &__navbar {
+    border-radius: 5px;
+    background: #DAE0E5;
+    padding: 10px 40px 10px 17px;
+    position: absolute;
+    right: 0;
+    @media (min-width: 575.98px) {
+      background: none;
+      border-radius: 0;
+      padding: 0;
+    }
+  }
 
+  &-item {
+    &--home {
       @media (min-width: 575.98px) {
-        background: none;
-        border-radius: 0;
-        padding: 0;
+        display: none;
       }
-   }
+    }
+  }
 }

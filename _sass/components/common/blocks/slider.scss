@@ -50,4 +50,10 @@
       color: #fff;
     }
   }
+
+  .swiper-button-next, .swiper-button-prev {
+    @media (max-width: 575.98px) {
+      display: none;
+    }
+  }
 }
