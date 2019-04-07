@@ -4,6 +4,9 @@
     {% for home in site.home %}
       <a class="link link__navbar" href="{{ site.url }}{{ home.url }}">ScrawlOn</a>
     {% endfor %}
+    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav nav__navbar">
         {% for link in site.links %}
@@ -20,7 +23,4 @@
       </ul>
     </div>
   </div>
-  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 </nav>

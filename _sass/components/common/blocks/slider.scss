@@ -23,6 +23,10 @@
     align-items: center;
   }
 
+  &__slide-link {
+    display: block;
+  }
+
   &__slide-title {
     background: rgba(255,255,255,.95);
     // mix-blend-mode: luminosity;

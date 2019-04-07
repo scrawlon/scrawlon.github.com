@@ -14,7 +14,9 @@ function home() {
     centeredSlides: true,
     paginationClickable: true,
     loop: true,
-    parallax: true
+    parallax: true,
+    preventClick: false,
+    preventClickPropagation: false
   });
 }
 

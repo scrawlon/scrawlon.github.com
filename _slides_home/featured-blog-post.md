@@ -9,7 +9,7 @@ background-image: do-code
   <div class="row">
     <div class="col-lg-2 col-md-1"></div>
     <div class="col-lg-8 col-md-10 my-auto">
-      <a href="{{ site.url }}{{ featured_post.url }}">
+      <a class="slider__slide-link" href="{{ site.url }}{{ featured_post.url }}">
         {% if featured_post.header_image %}
           {% assign slide_image = site.data.images[featured_post.header_image] %}
           <img class="slider__slide-illustration" src="{{ slide_image.file }}" alt="{{ slide_image.description }}">
