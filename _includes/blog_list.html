@@ -3,11 +3,11 @@
   {% for post in site.posts limit: page.blog_list_limit %}
     <li class="list-group-item">
       <div class="row">
-        <div class="col-lg-3">
+        <div class="col-lg-4">
           {% assign slide_image = site.data.images[post.header_image] %}
           <img class="" src="{{ slide_image.file }}" alt="{{ slide_image.description }}">
         </div>
-        <div class="col-lg-9">
+        <div class="col-lg-8">
           <small>{{ post.date | date: "%m/%d/%y" }}</small>
           <a href="{{ site.url }}{{ post.url }}"><h2>{{ post.title }}</h2></a>
         </div>

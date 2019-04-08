@@ -8,13 +8,10 @@ blog_list_limit: 3
 
 <section class="container">
   <div class="block-wrapper project-preview-header row">
-    <h1 class="col-lg-12 p-3">Latest Posts</h1>
-
-    {% include blog_list.html %}
-
-    <div>
-      <div class="backdrop"></div>
-      <a href="/blog"><h2><span class="text-highlight">Read more posts...</span></h2></a>
+    <div class="col-md-12">
+      <h1 class="p-3">Latest Posts</h1>
+      {% include blog_list.html %}
+      <a href="/blog"><button type="button" class="btn btn-primary">View more posts</button></a>
     </div>
   </div>
 </section>
