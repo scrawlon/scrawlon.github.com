@@ -16,7 +16,7 @@ function home() {
     loop: true,
     parallax: true,
     autoplay: 6000,
-    speed: 2000
+    speed: 500
   });
 }
 
