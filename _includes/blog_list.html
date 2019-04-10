@@ -5,7 +5,9 @@
       <div class="row">
         <div class="col-lg-4">
           {% assign slide_image = site.data.images[post.header_image] %}
-          <img class="" src="{{ slide_image.file }}" alt="{{ slide_image.description }}">
+          <a href="{{ site.url }}{{ post.url }}">
+            <img class="" src="{{ slide_image.file }}" alt="{{ slide_image.description }}">
+          </a>
         </div>
         <div class="col-lg-8">
           <small>{{ post.date | date: "%m/%d/%y" }}</small>

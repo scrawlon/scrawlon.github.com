@@ -1,0 +1,9 @@
+
+{% assign projects_featured = site.portfolio_projects | where: 'featured', 'true' %}
+{% for project in projects_featured limit:2 %}
+  <div class="col-lg-6 col-md-12 list-group">
+    <a class="d-flex justify-content-center list-group-item" href="{{ project.url | replace: '/portfolio_projects/', '/portfolio/' }}">
+      <img src="{{ site.url }}/images/thumbnails/{{ project.screenshot }}" alt="{{ project.title }}">
+    </a>
+  </div>
+{% endfor %}
