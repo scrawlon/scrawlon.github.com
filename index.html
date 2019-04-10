@@ -6,30 +6,36 @@ tags: [code ruby javascipt programming]
 blog_list_limit: 3
 ---
 
-<section class="container">
-  <div class="block-wrapper project-preview-header row">
-    <div class="col-md-12">
-      <h1 class="p-3">Latest Posts</h1>
-      {% include blog_list.html %}
-      <a href="/blog"><button type="button" class="btn btn-primary">View more posts</button></a>
+<section>
+  <div class="container">
+    <div class="row">
+      <h1 class="col-lg-12 p-3">Latest Posts</h1>
+      <div class="col-md-12">
+        {% include blog_list.html %}
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <a class="col-md-4 p-3 " href="/blog"><button type="button" class="btn btn-primary btn-lg btn-block">View more posts</button></a>
     </div>
   </div>
 </section>
 
-<section class="container">
-  <div class="row">
-    <h1 class="col-lg-12 p-3">Featured Projects</h1>
+<section>
+  <div class="container">
+    <div class="row">
+      <h1 class="col-lg-12 p-3">Featured Projects</h1>
 
-    {% assign projects_featured = site.portfolio_projects | where: 'featured', 'true' %}
-    {% for project in projects_featured limit:3 %}
-      <div class="col-lg-6 col-md-12">
-        <a href="{{ project.url | replace: '/portfolio_projects/', '/portfolio/' }}">
-          <img src="{{ site.url }}/images/thumbnails/{{ project.screenshot }}" alt="{{ project.title }}">
-        </a>
-      </div>
-    {% endfor %}
-    <div class="col-lg-6 col-md-12">
-      <a href="/portfolio"><h2>View More Projects</h2></a>
+      {% assign projects_featured = site.portfolio_projects | where: 'featured', 'true' %}
+      {% for project in projects_featured limit:2 %}
+        <div class="col-lg-6 col-md-12">
+          <a href="{{ project.url | replace: '/portfolio_projects/', '/portfolio/' }}">
+            <img src="{{ site.url }}/images/thumbnails/{{ project.screenshot }}" alt="{{ project.title }}">
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="row d-flex justify-content-center">
+      <a class="col-md-4 p-3" href="/portfolio"><button type="button" class="btn btn-primary btn-lg btn-block col-md-12">View more projects</button></a>
     </div>
   </div>
 </section>
