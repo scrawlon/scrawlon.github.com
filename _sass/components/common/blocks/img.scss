@@ -1,12 +1,12 @@
 
 .img {
 
-  &__slider {
+  &__background {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 
-    &--background {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
+    &--slider {
       opacity: .4;
       filter: grayscale(20%);
       mix-blend-mode: overlay;

@@ -2,7 +2,7 @@
 <div id="home-swiper" class="swiper-container slider">
   {% assign background-image = site.data.images['do-code'] %}
   <figure class="parallax-bg figure figure__slider--background">
-    <img class="img img__slider--background" src="{{ site.url }}/{{ background-image.file }}" alt="{{ background-image.description }}" />
+    <img class="img img__background img__background--slider" src="{{ site.url }}/{{ background-image.file }}" alt="{{ background-image.description }}" />
 
     {% include image_caption.html image=background-image %}
   </figure>
