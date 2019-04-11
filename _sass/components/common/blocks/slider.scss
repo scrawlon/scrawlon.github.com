@@ -48,6 +48,10 @@
       position: absolute;
       bottom: 24px;
       color: #fff;
+
+      @media (max-width: 575.98px) {
+        position: inherit;
+      }
     }
   }
 
