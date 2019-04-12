@@ -1,12 +1,18 @@
 
 <div class="list-group list-group-flush">
-  {% for post in site.posts limit: page.blog_list_limit %}
+  {% if paginator.posts | size > 0 %}
+    {% assign posts = paginator.posts %}
+  {% else %}
+    {% assign posts = site.posts %}
+  {% endif %}
+
+  {% for post in posts limit: page.blog_list_limit %}
     <div class="list-group-item">
       <div class="row">
         <div class="col-lg-4">
           {% assign slide_image = site.data.images[post.header_image] %}
           <a href="{{ site.url }}{{ post.url }}">
-            <img class="img__background" src="{{ slide_image.file }}" alt="{{ slide_image.description }}">
+            <img class="img__background" src="{{site.url}}/{{ slide_image.file }}" alt="{{ slide_image.description }}">
           </a>
         </div>
         <div class="col-lg-8">
