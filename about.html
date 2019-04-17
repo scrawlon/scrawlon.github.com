@@ -3,78 +3,90 @@ layout: page
 title: "About"
 description: "Learn about the Scrawlon website and its creator, Scott McGrath"
 tags: []
+header_image: do-code
 ---
 
-<h2>Introduction</h2>
-<p>
-  Scrawlon.com is the Internet hub for thoughts, works and writings of
-  Baltimore-area web developer, Scott McGrath. If you landed here from a web
-  search or social link, we hope you find what you need. If you're a recruiter
-  or potential future employer, we hope you like what you see.
-</p>
-<p>
-  Have a question about anything on the site?
-  <a href="/contact">Send us a message</a>.
-</p>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
 
-<h2>AKA Scott McGrath</h2>
-<p>
-On the Internet, I go by Scrawlon. It's short, memorable and has that cool "hacker"
-vibe -- like Neo, Count Zero or Mr. Robot -- Scrawlon is the unknown cyberpunk
-hero on the other side of your computer screen...
-</p>
+      </div>
 
-<ul class="social-networks">
-  {% assign social_networks = site.owner.social_networks %}
+      <div class="col-md-8">
+        <h1>In the real world</h1>
 
-  {% for social_network in social_networks %}
-    <li>
-      <a href="{{social_network.url}}" title="{{social_network.name}}" target="_blank" rel="noopener noreferrer">
-        <i class="fa {{social_network.icon}}"></i> / scrawlon
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+        <p>
+          I'm professional web developer. I write code for free snacks, coffee,
+          the occassional pizza and the least amount of money possible.
+          I guess it could be worse...
+        </p>
 
-<p>
-  Back in the real world, they call me Scott. I'm no hacker, but I do write
-  code. Professionally, 40 hours a week at
-  <a href="https://compulse.com/" title="Compulse Integrated Marketing" target="_blank" rel="noopener noreferrer">Compulse Integrated Marketing</a>,
-  building and maintaining hundreds of WordPress websites, serving clients
-  in many sectors across the country --
-  national brands
-  <a href="/portfolio/schmidt-baking" title="Schmidt Baking">(Schmidt Baking)</a> --
-  broadcast television
-  <a href="/portfolio/comet-tv" title="Comet TV">(Comet TV)</a> --
-  real estate
-  <a href="/portfolio/southern-highlands" title="Southern Highlands">(Southern Highlands)</a> --
-  education
-  <a href="/portfolio/wsu-stories" title="Washington State University">(Washington State University)</a> -- and more.
-  <!-- healthcare
-  <a href="/portfolio/guardian-healthcare" title="Guardian Healthcare">(Guardian Healthcare)</a> -- -->
-  <!-- professional organizations
-  <a href="/portfolio/pab" title="Pennsylvania Assoc. of Broadcasters">(Pennsylvania Assoc. of Broadcasters)</a> -- -->
-</p>
+        <p>
+          Seriously though, it's great. I've done some interesting and rewarding
+          work. Much of the code I blog about here, originated from larger projects
+          at my day job.
+        </p>
 
-<p>
-  I'm proud of that work, but the drive
-  to learn and create doesn't end at the office door. Programming is as much
-  art as profession. Recent personal projects include --
-  an Amazon Alexa game
-  <a href="/portfolio/alexa-ask-the-ai-hive-mind" title="Ask the A.I. Hive Mind">(Ask the A.I. Hive Mind)</a> --
-  an open source MIDI library
-  <a href="https://github.com/scrawlon/Unofficial-Novation-Circuit-MIDI-CC-JavaScript-data-library"
-    title="Unofficial Novation Circuit&trade; MIDI CC JavaScript data library"
-    target="_blank" rel="noopener noreferrer">(Unofficial Novation Circuit&trade; MIDI CC JavaScript data library)</a> --
-  a YouTube channel for Web MIDI API projects
-  <a href="https://www.youtube.com/channel/UCEMODeZFjTda5LMVgSgJoJQ" title="YouTube - Web MIDI Dev"
-    target="_blank" rel="noopener noreferrer">(Web MIDI Dev)</a> --
-  a professional portfolio and blog
-  <a href="{{site.url}}">(this site!)</a>.
-</p>
+        <p>
+          I've been fortunate to work with a creative and talented team of
+          developers and web deisgners. Any project, no matter seemingly mundane,
+          can be elevated
+        </p>
 
-<p>
-  When I'm not grinding out code for some active side venture,
-  I'm reading docs, scouring my Twitter feed, experimenting on CodePen,
-  hustling to stay current with the latest web languages and frameworks.
-</p>
+        <p>
+          I started late in life, after
+          decades working in an entirely different industry.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>AKA Scrawlon</h1>
+      </div>
+
+      <div class="col-md-8">
+        <p>
+          What is a Scrawlon? Is it a slang? Does it mean something rude????
+          No. No. No. It was originally the name of long defunct web application I created
+          -- kind of a cross between Twitter and Evernote, if you can imagine.
+          Anyway, I always liked the sound of it. It's short and
+          memorable, like a fictional computer hacker (Neo, Count Zero, Mr. Robot).
+          Scrawlon has been my Internet moniker for many years now.
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <ul class="list list__social-networks">
+          {% assign social_networks = site.owner.social_networks %}
+          {% for social_network in social_networks %}
+            <li>
+              <a href="{{social_network.url}}" title="{{social_network.name}}" target="_blank" rel="noopener noreferrer">
+                <i class="fab {{social_network.icon}}"></i> scrawlon
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p>
+          Have a question about anything on the site?
+          <a href="/contact">Send me a message</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

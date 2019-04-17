@@ -1,8 +1,12 @@
 {% include header.html %}
 {% assign background_image = "{{ site.url }}/images/blue-geometric-pattern.svg" %}
 
-<section>
+<header>
+  {% include slides_page.html %}
+</header>
+
+<main class="main" role='main'>
   {{ content }}
-</section>
+</main>
 
 {% include footer.html %}
