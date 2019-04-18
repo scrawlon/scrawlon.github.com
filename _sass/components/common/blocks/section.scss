@@ -1,9 +1,12 @@
 
 section {
   background: #F8F9FA;
-  padding: 30px 0 60px;
-  
+  padding: 40px 0 60px;
+
   &:nth-of-type(2) {
     background: #7FDBFF;
+    border-top: 10px dotted #F8F9FA;
+    // border-bottom: 10px dotted #F8F9FA;
+    padding: 80px 0 100px;
   }
 }

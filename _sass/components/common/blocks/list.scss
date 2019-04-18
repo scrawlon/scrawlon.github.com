@@ -4,5 +4,10 @@
   &__social-networks {
     list-style-type: none;
     font-size: 20px;
+
+    li {
+      margin: 0 10px 10px 0;
+      display: inline-block;
+    }
   }
 }
