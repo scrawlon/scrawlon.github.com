@@ -1,0 +1,15 @@
+<!-- Slider  -->
+<div class="swiper-container slider">
+  {% assign background-image = site.data.images[page.header_image] %}
+  <figure class="parallax-bg figure figure__slider--background">
+    <img class="img img__background img__background--slider" src="{{ site.url }}/{{ background-image.file }}" alt="{{ background-image.description }}" />
+
+    {% include image_caption.html image=background-image %}
+  </figure>
+
+  <div class="swiper-wrapper">
+    <div class="swiper-slide slider__slide">
+      <h1 class="slider__slide-title slider__slide-title-post">{{ page.title }}</h1>
+    </div>
+  </div>
+</div>

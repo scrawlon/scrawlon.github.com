@@ -1,0 +1,41 @@
+
+.post {
+  P {
+    margin: 10px 10px 30px;
+  }
+
+  h2 {
+    margin-top: 60px;
+    border-top: 1px solid #000;
+    padding: 20px 0 10px;
+  }
+
+  h3 {
+    margin: 30px 0 20px;
+  }
+
+  .share-page {
+    font-size: 16px;
+    text-align: right;
+    padding: 0 0 10px 0;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #000;
+
+    .fab {
+      margin: 0 5px;
+      font-size: 26px;
+    }
+  }
+
+  .alert {
+    margin: 20px 0 30px;
+  }
+
+  .gist {
+    padding: 20px;
+  }
+}
+
+#disqus_thread {
+  padding: 20px;
+}

@@ -7,20 +7,18 @@ header_image: swiper-js-fullscreen
 date: "2018-12-18 12:08:27 -0500"
 ---
 
-This is an update to [a post I wrote a year ago][1].
-You do not need to read that post to follow this. Here, I'll describe
-an alternative way to create a fullscreen SwiperJS image slider
-with step-by-step instructions.
+<div class="alert alert-primary" role="alert" markdown="1">
+  This is an update to [a post I wrote a year ago][1].
+  I do not recommend reading the older post, as I'll be laying out a better
+  alternative here.
+</div>
 
-The complete project code is available here:
-[Swiper JS fullscreen image slider (complete) on GitHubGist][7]{:target="\_blank"}{:rel="noopener noreferrer"}
-
-A full working demo is available here:
-[Swiper JS fullscreen image slider (complete) on CodePen][8]{:target="\_blank"}{:rel="noopener noreferrer"}
+<p class="text-center" markdown="1">
+  The complete project [code is available on Github:][7]{:target="\_blank"}{:rel="noopener noreferrer"} <br />
+  See a live [demo on CodePen][8]{:target="\_blank"}{:rel="noopener noreferrer"}
+</p>
 
 ## Intro / Basic Swiper Configuration
-
-[`preview on CodePen`][3]{:target="\_blank"}{:rel="noopener noreferrer"}
 
 [Swiper JS][2]{:target="\_blank"}{:rel="noopener noreferrer"}
 is a JavaScript library for creating slideshows that works
@@ -50,8 +48,6 @@ navigation and pagination.
 
 ## Add Images
 
-[`preview on CodePen`][5]{:target="\_blank"}{:rel="noopener noreferrer"}
-
 Now that we have a basic slideshow working, let's add images to the slides.
 For this tutorial, we'll use Creative Commons licensed images from the
 ['NASA Goddard Space Flight Center' Flickr account.][4]{:target="\_blank"}{:rel="noopener noreferrer"}
@@ -70,8 +66,6 @@ Edit the CSS to match this:
 <script src="https://gist.github.com/scrawlon/469e46c2bddbaf51eed971218fbeb7cb.js"></script>
 
 ## Add Fullscreen Image Function
-
-[`preview on CodePen`][6]{:target="\_blank"}{:rel="noopener noreferrer"}
 
 The goal is to make the slider images clickable, so they'll open fullscreen.
 The view will change from the multi-slide view to fullscreen mode.

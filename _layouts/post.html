@@ -1,22 +1,59 @@
 {% include header.html %}
+{% assign background_image = "{{ site.url }}/images/blue-geometric-pattern.svg" %}
 
-<article>
+<header>
+  {% include slides_post.html %}
+</header>
 
-  <div class="wrapper">
-    {{ content }}
-    <nav class="pagination">
-      {% if page.previous %}
-        <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">&lt; prev post</a>
-        {% if page.next %}
-          |
+<main class="main" role='main'>
+  <section class="post">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1">
+
+        </div>
+
+        <div class="col-lg-10">
+          {% include share_post.html %}
+
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-1">
+
+      </div>
+
+      <div class="col-lg-10">
+        <nav class="pagination">
+          {% if page.previous %}
+            <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">&lt; prev post</a>
+            {% if page.next %}
+              |
+            {% endif %}
+          {% endif %}
+          {% if page.next %}
+            <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">next post &gt;</a>
+          {% endif %}
+        </nav><!-- /.pagination -->
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="col-lg-1">
+
+      </div>
+      <div class="col-lg-10">
+        {% if page.comments %}
+          {% include disqus_comments.html %}
         {% endif %}
-      {% endif %}
-      {% if page.next %}
-        <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">next post &gt;</a>
-      {% endif %}
-    </nav><!-- /.pagination -->
-  </div>
-
-</article>
+      </div>
+    </div>
+  </section>
+</main>
 
 {% include footer.html %}

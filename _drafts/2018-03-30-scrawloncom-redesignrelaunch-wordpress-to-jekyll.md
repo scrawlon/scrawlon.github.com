@@ -53,7 +53,7 @@ picked up a bit of an eye for what looks good.
 
 I always meant this site to portray a "developer" vibe. The old site went
 literal, with a stock image of a computer monitor on a desk. The new design
-has a more abstract cyberpunk vibe -- 
+has a more abstract cyberpunk vibe --
 
 This true purpose of this website has always been to "wow" future employers.
 I need to show my best work here -- in the design of the site and in the

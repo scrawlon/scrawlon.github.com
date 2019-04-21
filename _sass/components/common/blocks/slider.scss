@@ -32,8 +32,20 @@
     background: rgba(255,255,255,.95);
     // mix-blend-mode: luminosity;
     display: inline-block;
-    padding: 4px 12px 6px;
+    padding: 10px 12px 14px;
     border-radius: 5px;
+    width: 600px;
+    max-width: 90%;
+
+    &-post {
+      border-bottom: 2px solid #fff;
+      color: #fff;
+      background: transparent;
+    }
+
+    &__slide-byline {
+      width: 100%;
+    }
   }
 
   &__slide-content {
