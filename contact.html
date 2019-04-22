@@ -3,24 +3,29 @@ layout: page
 title: "Contact"
 description: "Contact Form. Send a note to Scrawlon owner, Scott McGrath"
 tags: []
+header_image: do-code
 ---
 
-<h2>Get in touch</h2>
-<p>
-  Have a question or concern? Send us a message in the form below.
-  You can also reach us on social media.
-</p>
 
-<ul class="social-networks">
-  {% assign social_networks = site.owner.social_networks %}
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-1">
 
-  {% for social_network in social_networks %}
-    <li>
-      <a href="{{social_network.url}}" title="{{social_network.name}}" target="_blank" rel="noopener noreferrer">
-        <i class="fa {{social_network.icon}}"></i> {{social_network.name}}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+      </div>
+      <div class="col-md-10">
 
-{% include contact_form.html %}
+        <h2>Get in touch</h2>
+        <p>
+          Have a question or concern? Send a message in the form below.
+          You can also follow me on social media.
+        </p>
+
+        <div class="text-center p-3">
+          {% include social_networks.html %}
+        </div>
+
+        {% include contact_form.html %}
+      </div>
+    </div>
+  </section>

@@ -1,8 +1,19 @@
 
 <!-- include Social Networks -->
-{% assign social_networks = site.owner.social_networks %}
-{% for social_network in social_networks %}
-  <a class="link__social" href="{{social_network.url}}" title="{{social_network.name}}" target="_blank" rel="noopener noreferrer">
-    <i class="fab {{social_network.icon}}"></i>
-  </a>
-{% endfor %}
+<ul class="list list__social-networks">
+  {% assign social_networks = site.owner.social_networks %}
+  {% for social_network in social_networks %}
+    <li>
+        {% if include.footer == 'true' %}
+          <a class="link__social" href="{{social_network.url}}" title="{{social_network.name}}" target="_blank" rel="noopener noreferrer">
+            <i class="fab {{social_network.icon}}"></i>
+          </a>
+        {% else %}
+          <a href="{{social_network.url}}" title="{{social_network.name}}" target="_blank" rel="noopener noreferrer">
+            | <i class="fab {{social_network.icon}}"></i> scrawlon
+          </a>
+        {% endif %}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
