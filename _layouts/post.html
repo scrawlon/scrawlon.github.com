@@ -16,6 +16,12 @@
         <div class="col-lg-10">
           {% include share_post.html %}
 
+          {% if page.author %}
+            <div class="byline">
+              Written by {{ page.author }}
+            </div>
+          {% endif %}
+
           {{ content }}
         </div>
       </div>
@@ -31,7 +37,7 @@
           {% if page.previous %}
             <a class="prev-post" href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">&lt; prev post</a>
           {% endif %}
-          
+
           {% if page.next %}
             <a class="next-post" href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">next post &gt;</a>
           {% endif %}

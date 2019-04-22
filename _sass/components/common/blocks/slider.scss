@@ -31,7 +31,7 @@
   &__slide-title {
     background: rgba(255,255,255,.95);
     // mix-blend-mode: luminosity;
-    display: inline-block;
+    // display: inline-block;
     padding: 10px 12px 14px;
     border-radius: 5px;
     width: 600px;
@@ -42,10 +42,10 @@
       color: #fff;
       background: transparent;
     }
+  }
 
-    &__slide-byline {
-      width: 100%;
-    }
+  &__slide-byline {
+    // width: 100%;
   }
 
   &__slide-content {

@@ -10,7 +10,7 @@ background-image: do-code
     <div class="col-md-8">
       <div class="slider__slide-content">
         <h1 class="slider__slide-title">Coding is 99% planning. Typing is the easy part.</h1>
-        <div class="slider_slide-byline">
+        <div class="slider__slide-byline">
           -- Scott McGrath, programmer (Baltimore)
         </div>
       </div>
