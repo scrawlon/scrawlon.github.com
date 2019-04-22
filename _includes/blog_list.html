@@ -51,10 +51,10 @@
           {% endfor %}
 
           <li class="page-item {% unless paginator.next_page %}disabled{% endunless %}">
-            {% if paginator.previous_page %}
+            {% if paginator.next_page %}
               <a class="page-link" href="{{ paginator.next_page_path }}">Next</a>
             {% else %}
-              <span class="page-link">Prev</span>
+              <span class="page-link">Next</span>
             {% endif %}
           </li>
         </ul>

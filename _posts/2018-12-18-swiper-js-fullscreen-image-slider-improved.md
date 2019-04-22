@@ -14,8 +14,8 @@ date: "2018-12-18 12:08:27 -0500"
 </div>
 
 <p class="text-center" markdown="1">
-  The complete project [code is available on Github:][7]{:target="\_blank"}{:rel="noopener noreferrer"} <br />
-  See a live [demo on CodePen][8]{:target="\_blank"}{:rel="noopener noreferrer"}
+  The complete project [code is available on Github.][7]{:target="\_blank"}{:rel="noopener noreferrer"} <br />
+  See a live [demo on CodePen.][8]{:target="\_blank"}{:rel="noopener noreferrer"}
 </p>
 
 ## Intro / Basic Swiper Configuration
