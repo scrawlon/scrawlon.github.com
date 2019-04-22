@@ -3,18 +3,7 @@ ID: 222
 title: Add More Social Media Options to WordPress Divi Theme
 description: "Learn how to add additional social media links to Divi WordPress theme"
 author: Scott McGrath
-header_image:
-  file: divi-social-icons.jpg
-  caption:
-    credit:
-      name: Daniel Garrido
-      url: https://www.flickr.com/photos/iloveui/
-    license:
-      type: Creative Commons
-      url: https://creativecommons.org/licenses/by/2.0/
-    source: Flickr
-    title: ICONS
-    url: https://flic.kr/p/bMfE34
+header_image: divi-social-icons
 post_excerpt: "A tutorial on the Divi theme's pluggable functions, focused on extending the header/foooter social media options."
 layout: post
 published: true

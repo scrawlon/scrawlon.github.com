@@ -8,6 +8,5 @@ caption:
   license:
     type: license
     url: https://unsplash.com/license
-  source:
-    site: Flickr
-    url: https://flic.kr/p/Kgfvw5
+  source: Flickr
+  url: https://flic.kr/p/Kgfvw5

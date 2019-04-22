@@ -3,18 +3,7 @@ ID: 123
 title: Control Your Webcam with HTML and JavaScript
 description: "Learn how to control a webcam in your web browser (JavaScript)"
 author: Scott McGrath
-header_image:
-  file: webcam1.jpg
-  caption:
-    credit:
-      name: Dan Zen
-      url: https://www.flickr.com/photos/danzen/
-    license:
-      type: Creative Commons
-      url: https://creativecommons.org/licenses/by/2.0/
-    source: Flickr
-    title: Focuso Cam
-    url: https://flic.kr/p/4b1s3E
+header_image: webcam1
 post_excerpt: "In this short tutorial you'll learn how to take control of your computer's web cam, using HTML and JavaScript."
 layout: post
 published: true

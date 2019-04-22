@@ -4,18 +4,7 @@ title: Writing On Glass
 author: Scott McGrath
 description: "Interested in computer tablets for taking handwritten notes?
 Here, I look at the pros/cons of a few popular choices"
-header_image:
-  file: tablet-computers.jpg
-  caption:
-    credit:
-      name: Martin Voltri
-      url: https://www.flickr.com/photos/testrunbomber842/
-    license:
-      type: Creative Commons
-      url: https://creativecommons.org/licenses/by/2.0/
-    source: Flickr
-    title: Tablets
-    url: https://flic.kr/p/gjn3St
+header_image: tablet-computers
 post_excerpt: 'Pen tablets, Windows 8.1 and note taking apps: My search for a usable device for writing and maintaining handwritten notes.'
 layout: post
 published: true

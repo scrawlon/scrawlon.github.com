@@ -1,7 +1,7 @@
 {% if include.image.caption %}
   <figcaption class="figcaption figcaption__slider--background small">
-    {% if include.image.caption.source.url %}
-      <a href="{{ include.image.caption.source.url }}" title="{{ include.image.title}}" target="_blank" rel="noopener noreferrer">
+    {% if include.image.caption.url %}
+      <a href="{{ include.image.caption.url }}" title="{{ include.image.title}}" target="_blank" rel="noopener noreferrer">
         "{{ include.image.title }}"
       </a>
     {% else %}
@@ -12,7 +12,7 @@
         by {{ include.image.caption.owner.name }}
       </a>
     {% else if include.image.caption.source %}
-      from {{ include.image.caption.source.site }}
+      from {{ include.image.caption.source }}
     {% endif %}
     {% if include.image.caption.license.type %}
       <a href="{{ include.image.caption.license.url }}" title="{{ include.image.caption.license.type}}" target="_blank" rel="noopener noreferrer">

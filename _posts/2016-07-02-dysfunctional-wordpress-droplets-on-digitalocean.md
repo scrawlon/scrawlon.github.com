@@ -4,18 +4,7 @@ title: Dysfunctional WordPress Droplets on DigitalOcean
 description: "Having server issues with WordPress on DigitalOcean? Here are some
 problems/solutions I discovered"
 author: Scott McGrath
-header_image:
-  file: digital-ocean-droplets.jpg
-  caption:
-    credit:
-      name: IH
-      url: https://www.flickr.com/photos/9289838@N06/
-    license:
-      type: Creative Commons
-      url: https://creativecommons.org/licenses/by/2.0/
-    source: Flickr
-    title: Splash!
-    url: https://flic.kr/p/68JcTw
+header_image: digital-ocean-droplets
 post_excerpt: "Problems with DigitalOcean's WordPress One-Click Install"
 layout: post
 published: true
