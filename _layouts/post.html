@@ -18,7 +18,7 @@
 
           {% if page.author %}
             <div class="byline">
-              Written by {{ page.author }}
+              Written by {{ page.author }} - {{ page.date | date: "%m/%d/%Y" }}
             </div>
           {% endif %}
 
