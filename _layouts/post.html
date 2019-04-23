@@ -9,11 +9,7 @@
   <section class="post">
     <div class="container">
       <div class="row">
-        <div class="col-lg-1">
-
-        </div>
-
-        <div class="col-lg-10">
+        <div class="col-lg-10 offset-md-1">
           {% include share_post.html %}
 
           {% if page.author %}
@@ -28,11 +24,7 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-1">
-
-      </div>
-
-      <div class="col-lg-10">
+      <div class="col-lg-10 offset-md-1">
         <nav class="pagination">
           {% if page.previous %}
             <a class="prev-post" href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">&lt; prev post</a>
@@ -48,10 +40,7 @@
 
   <section>
     <div class="row">
-      <div class="col-lg-1">
-
-      </div>
-      <div class="col-lg-10">
+      <div class="col-lg-10 offset-md-1">
         {% if page.comments %}
           {% include disqus_comments.html %}
         {% endif %}
