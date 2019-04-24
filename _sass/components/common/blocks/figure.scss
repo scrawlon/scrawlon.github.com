@@ -16,7 +16,7 @@
         background-color: #000;
         bottom: 0;
         content: '';
-        mix-blend-mode: lighten;
+        mix-blend-mode: screen;
         left: 0;
         right: 0;
         position: absolute;
@@ -26,10 +26,10 @@
       }
 
       &:after {
-        background: #000;
+        background: linear-gradient(to bottom, #000, transparent);
         bottom: 0;
         content: '';
-        mix-blend-mode: screen;
+        mix-blend-mode: overlay;
         left: 0;
         right: 0;
         position: absolute;
