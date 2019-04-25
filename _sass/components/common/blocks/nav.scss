@@ -7,11 +7,13 @@
   right: 0;
 
   &__navbar {
+    text-transform: uppercase;
     border-radius: 5px;
     background: #DAE0E5;
     padding: 10px 40px 10px 17px;
     position: absolute;
     right: 0;
+
     @media (min-width: 575.98px) {
       background: none;
       border-radius: 0;
